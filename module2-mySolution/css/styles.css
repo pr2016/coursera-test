@@ -7,18 +7,18 @@ h1 {
 	text-align: center;
 }
 
-section.all {
-	width: 100%;
+/* section.all {
+	width: 99%;
 	/* margin: auto; centers this section element */
 	/*position: 100px;*/
 	/*left: 5%;*/
-	margin-left: auto;
+	/* margin-left: auto;
 	margin-right: auto;
-	margin-bottom: auto;
-}
+	margin-bottom: auto; */
+	/* margin-left: 2%; */ 
 
 div {
-	width: 33.33%;
+	width: 30%;
 	border: 1px solid black;
 	margin: 10px;
 	float: left;
@@ -62,11 +62,110 @@ p {
 	
 } 
 
-/*@media (min-width: 992px) {
-	div {
-		float: left;
-		width: 33.33%;
+/* #p1div {
+	margin-left: 0%;
+}
+
+#p2div {
+	margin-left: 0%;
+	margin-right: 0%;
+} */
+
+
+
+@media (min-width: 992px) {
+	section.all {
+		width: 99%;
+		margin-left: 2%;
 	}
-}*/
 
+	div {
+		width: 30%;
+		border: 1px solid black;
+		margin: 10px;
+		float: left;
+		/*position: relative;*/
+	}
+}
 
+/* Desktop View */
+@media (min-width: 992px) {
+	section.all {
+		width: 99%;
+		margin-left: 4.5%;
+	}
+
+	/* #p1andp2{
+		width: 100%;
+		border: none;
+	} */
+
+	div {
+		width: 30%;
+		border: 1px solid black;
+		margin: 10px;
+		float: left;
+	}
+}
+
+/* Tablet View */
+@media (min-width: 768px) and (max-width: 991px) {
+	section.all {
+		width: 100%;
+	}
+
+	/* #p1andp2{
+		width: 100%;
+		border: none;
+	} */
+
+	#p1div, #p2div {
+		 width: 47%; 
+		border: 1px solid black;
+		float: left;
+		/* float: center; */
+		/* margin: auto; */
+		/* margin: 5px; */
+	}
+
+	#p1div {
+		/* margin-right: 0px; */
+		float: left;
+	}
+
+	#p3header {
+		width: 12%;
+		left: 88%;
+	}
+	#p3div {
+		width: 97%;
+		border: 1px solid black;
+		/* margin: 10px; */
+		/* float: left; */
+	}
+}
+
+/* Mobile View */
+@media (max-width: 767px) {
+	section.all {
+		width: 100%;
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+
+	/* #p1andp2{
+		width: 100%;
+		border: none;
+	} */
+
+	#p1div, #p2div, #p3div {
+		width: 97%; 
+		border: 1px solid black;
+		/* float: left; */
+		/* margin-left: 20px; */
+		
+		/* float: center; */
+		/* margin: auto; */
+		/* margin: 5px; */
+	}
+}
