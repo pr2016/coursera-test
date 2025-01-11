@@ -79,6 +79,9 @@ p {
 	color: white;
 }
 
+p.pcontent {
+	padding: 20px;
+}
 
 @media (min-width: 992px) {
 	section.all {
@@ -145,7 +148,7 @@ p {
 		left: 88%;
 	}
 	#p3div {
-		width: 97%;
+		width: 96%;
 		border: 1px solid black;
 		/* margin: 10px; */
 		/* float: left; */
