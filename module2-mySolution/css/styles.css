@@ -51,14 +51,17 @@ p {
 
 #p1header {
 	background-color: #BD8EE5; /* color: Wisteria - kinda lilac*/
+	color: black;
 }
 
 #p2header{
 	background-color: #8EE5BD; /* color: Vista Blue - kinda mint green */
+	color: black;
 }
 
 #p3header{
 	background-color: #E58EBD; /* color: Shocking - pink color */
+	color: black;
 	
 } 
 
@@ -71,6 +74,10 @@ p {
 	margin-right: 0%;
 } */
 
+#p1div, #p2div, #p3div {
+	background-color: gray;
+	color: white;
+}
 
 
 @media (min-width: 992px) {
